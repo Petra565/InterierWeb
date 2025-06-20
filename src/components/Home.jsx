@@ -1,8 +1,8 @@
 ﻿function Home() {
     return (
         <>
-            <div className="flex h-full w-full justify-center">
-            <img src="../../images/logo.jpg" className="h-65 w-65 rounded-full"></img>
+            <div className="mt-10 grid h-full w-full place-items-center">
+                <img className="h-64 w-64 rounded-full"src="../../images/logo.jpg"></img>
             </div>
         </>
     )

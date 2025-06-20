@@ -1,7 +1,6 @@
 ﻿function ContactBar() {
     return (
         <>
-            <div className="row-span-full">
                 <div className="contactBarContainer hidden items-center bg-black text-white sm:grid sm:h-10 sm:grid-cols-8 sm:px-4 md:h-10 md:grid-cols-12 md:px-8">
                     <div className="menuPersonal sm:col-span-4 md:col-span-6">
                         <ul className="flex items-center gap-4">
@@ -36,7 +35,6 @@
                         </ul>
                     </div>
                     </div>
-                </div>
         </>
     )
 }
