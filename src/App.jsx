@@ -12,7 +12,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
     return (
         <>
-            <div className="w-full">
+            <div className="h-[calc(100vh-100px)]">
                 <Router>
                     <>
                         <Background></Background>
