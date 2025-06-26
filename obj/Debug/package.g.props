@@ -9,10 +9,13 @@
     <PackageJsonScriptsBuild Condition="$(PackageJsonScriptsBuild) == ''">vite build</PackageJsonScriptsBuild>
     <PackageJsonScriptsLint Condition="$(PackageJsonScriptsLint) == ''">eslint .</PackageJsonScriptsLint>
     <PackageJsonScriptsPreview Condition="$(PackageJsonScriptsPreview) == ''">vite preview</PackageJsonScriptsPreview>
+    <PackageJsonDependenciesHeadlessuiReact Condition="$(PackageJsonDependenciesHeadlessuiReact) == ''">^2.2.4</PackageJsonDependenciesHeadlessuiReact>
     <PackageJsonDependenciesTailwindcssVite Condition="$(PackageJsonDependenciesTailwindcssVite) == ''">^4.1.10</PackageJsonDependenciesTailwindcssVite>
+    <PackageJsonDependenciesLightboxJsReact Condition="$(PackageJsonDependenciesLightboxJsReact) == ''">^1.6.0</PackageJsonDependenciesLightboxJsReact>
     <PackageJsonDependenciesReact Condition="$(PackageJsonDependenciesReact) == ''">^19.1.0</PackageJsonDependenciesReact>
     <PackageJsonDependenciesReactDom Condition="$(PackageJsonDependenciesReactDom) == ''">^19.1.0</PackageJsonDependenciesReactDom>
     <PackageJsonDependenciesTailwindcss Condition="$(PackageJsonDependenciesTailwindcss) == ''">^4.1.10</PackageJsonDependenciesTailwindcss>
+    <PackageJsonDependenciesYetAnotherReactLightbox Condition="$(PackageJsonDependenciesYetAnotherReactLightbox) == ''">^3.23.3</PackageJsonDependenciesYetAnotherReactLightbox>
     <PackageJsonDevdependenciesEslintJs Condition="$(PackageJsonDevdependenciesEslintJs) == ''">^9.25.0</PackageJsonDevdependenciesEslintJs>
     <PackageJsonDevdependenciesTypesReact Condition="$(PackageJsonDevdependenciesTypesReact) == ''">^19.1.2</PackageJsonDevdependenciesTypesReact>
     <PackageJsonDevdependenciesTypesReactDom Condition="$(PackageJsonDevdependenciesTypesReactDom) == ''">^19.1.2</PackageJsonDevdependenciesTypesReactDom>

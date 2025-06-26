@@ -1,5 +1,4 @@
-﻿import TextArea from './TextArea'
-function Home() {
+﻿function Home() {
     return (
         <>
             <div className="relative h-full object-center sm:relative">

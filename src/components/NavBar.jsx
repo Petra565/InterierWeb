@@ -10,6 +10,7 @@ function NavBar() {
                     <li className="col-span-4 sm:col-span-2 lg:col-span-1"><Link to="/gallery" className="text-centertransition block w-full rounded px-6 py-2 hover:bg-white/50 hover:text-black">Galéria</Link></li>
                     <li className="col-span-4 sm:col-span-2 lg:col-span-1"><Link to="/contact" className="block w-full rounded px-6 py-2 text-center transition hover:bg-white/50 hover:text-black">Kontakt</Link></li>
                 </ul>
+                
             </nav>
         </>
     )
