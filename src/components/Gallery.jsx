@@ -125,7 +125,7 @@ function Gallery() {
                 <div className="grid h-full bg-white/75 px-4 pb-10 md:mx-10 md:py-4 md:pb-20">
                     {imagesSections.map((section) => (
                         <div className="col-span-full grid-rows-5" key={section.name}>
-                            <h1 className="my-4 text-center font-extrabold text-black sm:text-xl md:text-2xl">{section.name}</h1>
+                            <h1 className="my-4 text-center text-black sm:text-xl md:text-2xl">{section.name}</h1>
                                 <ImagesComponent
                                     images={section.images}
                                 ></ImagesComponent>
