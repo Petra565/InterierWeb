@@ -10,7 +10,7 @@
                                         
                     src="../../images/logo.jpg"></img>
                 <div className="mx-auto mt-4 grid grid-cols-12 bg-black/50 p-4 text-white sm:h-[60%] sm:w-[75%] sm:rounded-xl sm:border-1 sm:border-white sm:p-6 md:h-[60%] md:w-[80%] md:text-xl lg:h-[60%] lg:w-[70%] lg:p-10 lg:text-2xl xl:h-[60%] xl:w-[65%]">
-                    <h1 className="col-span-full mb-4 flex items-center justify-center text-lg md:text-lg lg:mb-0 lg:text-2xl">Výroba prebieha v Trnave a montáž poskytujeme v rámci západného Slovenska. V prípade záujmu nás kontaktujte telefonicky každý deň od 8:00 do 19:00 alebo prostredníctvom emailu:</h1>
+                    <h1 className="col-span-full mb-4 flex items-center justify-center text-lg md:text-lg lg:mb-0 lg:text-2xl">Výroba prebieha v Trnave. V prípade záujmu nás kontaktujte telefonicky každý deň od 8:00 do 19:00 alebo prostredníctvom emailu:</h1>
                     <ul className="menuPersonal col-span-full grid grid-cols-1 items-center gap-4 sm:grid-cols-2">
                         <li className="flex w-full justify-center">
                             <a href="tel:+421907420253" className="flex items-center justify-center gap-2 whitespace-nowrap hover:text-[#BCB3AB]">
