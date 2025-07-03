@@ -2,7 +2,7 @@
     return (
         <>
             <div className="relative h-full object-center sm:relative">
-                <img className="mx-auto my-8 h-40 w-40 rounded-full
+                <img className="mx-auto my-6 h-40 w-40 rounded-full
                                  sm:absolute sm:top-[6%] sm:left-1/2 sm:mx-0 sm:my-0 sm:h-52 sm:w-52 sm:-translate-x-1/2 sm:transform
                                    md:h-56 md:w-56
                                       xl:h-64 xl:w-64"
