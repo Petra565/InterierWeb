@@ -4,14 +4,12 @@ function Gallery() {
         {
             name: 'Kuchyne',
             images: [
-                "/images/kuchyne/IMG_01.jpg",
-                "/images/kuchyne/IMG_02.jpg",
-                "/images/kuchyne/IMG_03.jpg",
+
                 "/images/kuchyne/IMG_04.jpg",
                 "/images/kuchyne/IMG_05.jpg",
-                "/images/kuchyne/IMG_06.jpg",
                 "/images/kuchyne/IMG_07.jpg",
                 "/images/kuchyne/IMG_08.jpg",
+                "/images/kuchyne/IMG_03.jpg",
                 "/images/kuchyne/IMG_09.jpg",
                 "/images/kuchyne/IMG_10.jpg",
                 "/images/kuchyne/IMG_11.jpg",
@@ -19,11 +17,13 @@ function Gallery() {
                 "/images/kuchyne/IMG_13.jpg",
                 "/images/kuchyne/IMG_14.jpg",
                 "/images/kuchyne/IMG_15.jpg",
-                "/images/kuchyne/IMG_16.jpg",
                 "/images/kuchyne/IMG_17.jpg",
-                "/images/kuchyne/IMG_18.jpg"
+                "/images/kuchyne/IMG_18.jpg",
+                "/images/kuchyne/IMG_01.jpg",
+                "/images/kuchyne/IMG_02.jpg"
             ]
         },
+
         {
             name: 'Obývacie steny',
             images: [
@@ -87,9 +87,6 @@ function Gallery() {
                 "/images/dvere/IMG_86.jpg",
                 "/images/dvere/IMG_87.jpg",
                 "/images/dvere/IMG_88.jpg",
-                "/images/dvere/IMG_90.jpg",
-                "/images/dvere/IMG_91.jpg",
-                "/images/dvere/IMG_92.jpg",
             ]
         },
 
@@ -126,9 +123,9 @@ function Gallery() {
                     {imagesSections.map((section) => (
                         <div className="col-span-full grid-rows-5" key={section.name}>
                             <h1 className="my-4 text-center text-black sm:text-xl md:text-2xl">{section.name}</h1>
-                                <ImagesComponent
-                                    images={section.images}
-                                ></ImagesComponent>
+                            <ImagesComponent
+                                images={section.images}
+                            ></ImagesComponent>
 
                         </div>
                     ))}

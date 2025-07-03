@@ -39,11 +39,6 @@
                             <li>montáž dverí</li>
                         </ul>
                     </div>
-                    <h1 className="hidden mx-auto  sm:block font-['Ephesis']    text-white text-shadow-black text-shadow-lg text-center
-                                        sm:bottom-1/10 sm:left-1/2  sm:-translate-x-1/2 sm:transform  sm:text-[4rem] sm:absolute sm:whitespace-nowrap
-                                            md:bottom-[8%]
-                                                lg:text-[6rem]">Kvalita z malej dielne.
-                    </h1>
                 </div>
             </div>
         </>
