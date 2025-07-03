@@ -22,9 +22,6 @@
                             <li>detské izby</li>
                         </ul>
                     </div>
-                    <div className="my-1 sm:hidden mx-auto w-max block font-['Ephesis'] text-[2.5rem]  text-white text-shadow-black text-shadow-lg whitespace-nowrap
-                                       ">Kvalita z malej dielne.
-                    </div>
                     <div className="place-items-center rounded-xl border-1 border-white bg-black/50 p-4 text-white
                                     sm:absolute sm:top-[45%] sm:right-1/20 sm:w-4/10
                                         lg:top-1/2 lg:w-3/10 lg:-translate-y-1/2 lg:transform">
