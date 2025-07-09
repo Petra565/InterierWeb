@@ -12,7 +12,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
     return (
         <>
-            <div className="relative max-h-screen sm:h-[calc(100vh-100px)]">
+            <div className="relative">
                 <Router>
                     <>
                         <Background></Background>

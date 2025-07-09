@@ -1,22 +1,40 @@
-﻿import React from 'react';
-import { SlideshowLightbox } from 'lightbox.js-react';
+﻿import React, { useState } from "react";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+
 function ImagesComponent({ images }) {
+    const [open, setOpen] = useState(false);
+    const [index, setIndex] = useState(0);
+
+    const lightboxSlides = images.map((src) => ({
+        src: `/images/full${src}`,
+    }));
 
     return (
         <>
-            <div className="grid">
-                <SlideshowLightbox className="grid grid-cols-2 place-items-center gap-4 sm:grid-cols-4 md:grid-cols-5" showThumbnails theme="lightbox">
-                {images.map((src, index) => (
-                        <img
-                            key={src}
-                            src={src}
-                            alt={`image ${index + 1}`}
-                            className="h-auto w-full cursor-pointer rounded shadow-md"
-                        />
+            <div className="grid grid-cols-2 items-center gap-4 sm:grid-cols-4 md:grid-cols-5">
+                {images.map((src, i) => (
+                    <img
+                        key={i}
+                        src={`/images/thumbs${src}`}
+                        alt={`Image ${i}`}
+                        className="cursor-pointer rounded shadow-xl shadow-black/50 transition-transform duration-300 hover:scale-105"
+                        onClick={() => {
+                            setIndex(i);
+                            setOpen(true);
+                        }}
+                    />
                 ))}
-                </SlideshowLightbox>
-    </div>
+            </div>
+
+            <Lightbox
+                open={open}
+                close={() => setOpen(false)}
+                index={index}
+                slides={lightboxSlides}
+            />
         </>
-    )
+    );
 }
-export default ImagesComponent
+
+export default ImagesComponent;
