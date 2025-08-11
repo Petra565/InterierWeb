@@ -4,6 +4,7 @@ function Gallery() {
     const imagesSections = [
         {
             name: 'Kuchyne',
+            alt: 'Kuchynská linka',
             images: [
 
                 "/kuchyne/IMG_01.jpg",
@@ -33,6 +34,7 @@ function Gallery() {
 
         {
             name: 'Obývacie steny',
+            alt: 'Obývacia stena',
             images: [
                 "/obyvacieSteny/IMG_01.jpg",
                 "/obyvacieSteny/IMG_02.jpg",
@@ -40,12 +42,13 @@ function Gallery() {
                 "/obyvacieSteny/IMG_04.jpg",
                 "/obyvacieSteny/IMG_05.jpg",
                 "/obyvacieSteny/IMG_06.jpg",
-                
+
             ]
         },
 
         {
             name: 'Kúpeľne',
+            alt: 'Kúpeľňa',
             images: [
                 "/kupelne/IMG_01.jpg",
                 "/kupelne/IMG_02.jpg",
@@ -55,12 +58,13 @@ function Gallery() {
                 "/kupelne/IMG_06.jpg",
                 "/kupelne/IMG_07.jpg",
                 "/kupelne/IMG_08.jpg",
-               
+
             ]
         },
 
         {
             name: 'Skrine',
+            alt: 'Skriňa',
             images: [
                 "/skrine/IMG_01.jpg",
                 "/skrine/IMG_02.jpg",
@@ -87,12 +91,13 @@ function Gallery() {
                 "/skrine/IMG_23.jpg",
                 "/skrine/IMG_24.jpg",
                 "/skrine/IMG_25.jpg",
-               
+
             ]
         },
 
         {
             name: 'Dvere',
+            alt: 'Dvere',
             images: [
                 "/dvere/IMG_01.jpg",
                 "/dvere/IMG_02.jpg",
@@ -101,12 +106,13 @@ function Gallery() {
                 "/dvere/IMG_05.jpg",
                 "/dvere/IMG_06.jpg",
                 "/dvere/IMG_07.jpg",
-               
+
             ]
         },
 
         {
             name: 'Iné',
+            alt: 'Nábytok na mieru',
             images: [
                 "/ine/IMG_01.jpg",
                 "/ine/IMG_02.jpg",
@@ -127,49 +133,47 @@ function Gallery() {
                 "/ine/IMG_17.jpg",
                 "/ine/IMG_18.jpg",
                 "/ine/IMG_19.jpg",
-               
+
             ]
         },
 
     ]
 
     return (
-        <>
-            <div className="grid w-full pb-8">
-                <div className="grid bg-white/75">
-                    {imagesSections.map((section, index) => (
-                        <Disclosure
-                            key={section.name}
-                            defaultOpen={index === 0}
-                        >
-                            {({ open }) => (
-                                <div>
-                                    <Disclosure.Button className="relative flex w-full cursor-pointer items-center border-t-1 border-black/10 px-8 py-4 text-black">
-                                        <span className="absolute left-1/2 -translate-x-1/2 md:text-xl">
-                                            {section.name}
-                                        </span>
+        <section className="Gallery grid w-full pb-8">
+            <div className="grid bg-white/75">
+                {imagesSections.map((section, index) => (
+                    <Disclosure
+                        key={section.name}
+                        defaultOpen={index === 0}
+                    >
+                        {({ open }) => (
+                            <div>
+                                <Disclosure.Button className="relative flex w-full cursor-pointer items-center border-t-1 border-black/10 px-8 py-4 text-black">
+                                    <h1 className="absolute left-1/2 -translate-x-1/2 md:text-xl">
+                                        {section.name}
+                                    </h1>
 
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className={`ml-auto bi bi-chevron-down text-black transition-transform duration-300 ${open ? 'rotate-180' : ''}`} viewBox="0 0 16 16">
-                                            <path fillRule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                                        </svg>
-                                    </Disclosure.Button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className={`ml-auto bi bi-chevron-down text-black transition-transform duration-300 ${open ? 'rotate-180' : ''}`} viewBox="0 0 16 16">
+                                        <path fillRule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                    </svg>
+                                </Disclosure.Button>
 
-                                    <DisclosurePanel
-                                        className={`transition-all duration-300 col-span-full p-4 overflow-hidden ${open ? "opacity-100" : "max-h-0 opacity-0"
-                                            }`}
-                                    >
-                                        <div className="p-4">
-                                            <ImagesComponent images={section.images} />
-                                        </div>
-                                    </DisclosurePanel>
-                                </div>
-                            )}
-                        </Disclosure>
-                    ))}
+                                <DisclosurePanel
+                                    className={`transition-all duration-300 col-span-full p-4 overflow-hidden ${open ? "opacity-100" : "max-h-0 opacity-0"
+                                        }`}
+                                >
+                                    <div className="p-4">
+                                        <ImagesComponent images={section.images} alt={section.alt} />
+                                    </div>
+                                </DisclosurePanel>
+                            </div>
+                        )}
+                    </Disclosure>
+                ))}
 
-                </div>
-            </div >
-        </>
+            </div>
+        </section >
     )
 }
 

@@ -2,7 +2,7 @@
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
-function ImagesComponent({ images }) {
+function ImagesComponent({ images, alt }) {
     const [open, setOpen] = useState(false);
     const [index, setIndex] = useState(0);
 
@@ -17,7 +17,7 @@ function ImagesComponent({ images }) {
                     <img
                         key={i}
                         src={`/images/thumbs${src}`}
-                        alt={`Image ${i}`}
+                        alt={`${alt + "_" + i}`}
                         className="cursor-pointer rounded shadow-xl shadow-black/50 transition-transform duration-300 hover:scale-105"
                         onClick={() => {
                             setIndex(i);
